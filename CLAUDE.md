@@ -219,6 +219,13 @@ ohlcv = get_ohlcv_data(token_address, timeframe='1H', days_back=3)
 price = token_price(token_address)
 ```
 
+## Visual Studio Code Alternatives
+
+- Maintain a `docs/AI_ASSISTANT_GUIDELINES.md` that both Claude Code and GitHub Copilot can reference, then surface it via VS Code's Workspace Trust welcome or README.
+- Provide VS Code users with a `.vscode/README.md` or `WELCOME.md` surfaced through the `workbench.welcome.enabled` setting to ensure guidance appears on open.
+- Supply task-driven onboarding through `.vscode/tasks.json` coupled with command palette descriptions so Copilot users can follow prescribed workflows without reading CLAUDE.md.
+- Expose assistant notes inside `.vscode/extensions.json` (recommended extensions) and `settings.json` comments, pointing contributors to shared AI usage policies directly within the editor.
+
 ## Project Philosophy
 
 This is an **experimental, educational project** demonstrating AI agent patterns through algorithmic trading:
